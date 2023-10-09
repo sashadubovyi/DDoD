@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDoD</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container headerContainer">
+        <nav class="navigation">
+          <a href="/">
+            <svg class="logoHeader" width="35" height="50">
+              <use href="./images/Icon/sprite.svg#logoHeader"></use>
+            </svg>
+          </a>
+
+          <ul class="navList">
+            <li class="navItem">
+              <a href="#trailer" class="text navText">trailer</a>
+            </li>
+            <li class="navItem">
+              <a href="#screenshots" class="text navText">screenshots</a>
+            </li>
+            <li class="navItem">
+              <a href="#art-concepts" class="text navText">art-concepts</a>
+            </li>
+            <li class="navItem">
+              <a href="https://discord.com" target="_blank" class="text navText"
+                >discord</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="menuBtn" id="menuBtn">
+          <svg class="menuOpenBtn" width="60" height="60">
+            <use href="./images/Icon/sprite.svg#menuOpen"></use>
+          </svg>
+        </button>
+        <button class="twoColorBtn" id="modalBtn">
+          <svg class="twoColorBtnSvg" width="40" height="40">
+            <use href="./images/Icon/sprite.svg#pinkSteamBtn"></use>
+          </svg>
+          <span class="twoColorBtnSpan">Play demo now</span>
+        </button>
+      </div>
+    </header>
+
+    <section>
+      <div class="mainScreen">
+        <picture class="mainPicture">
+          <source
+            srcset="./images/backgrounds/mainMob.png"
+            media="(max-width: 360px)"
+            class="mainImg"
+          />
+          <source
+            srcset="./images/backgrounds/mainBcg.png"
+            media="(max-width: 768px)"
+            class="mainImg"
+          />
+          <source
+            srcset="./images/backgrounds/main1920.png"
+            media="(max-width: 1200px)"
+            class="mainImg"
+          />
+          <img
+            src="./images/backgrounds/main1920.png"
+            alt="mainBcg"
+            class="mainImg"
+          />
+        </picture>
+        <div class="container innerImgContainer">
+          <div class="platformContainer">
+            <div class="svgBox">
+              <a href="/">
+                <svg class="playstation" width="196px" height="24px">
+                  <use href="./images/Icon/sprite.svg#playstation"></use>
+                </svg>
+              </a>
+
+              <div class="bottomSvg">
+                <a href="/">
+                  <svg class="xbox" width="102" height="24">
+                    <use href="./images/Icon/sprite.svg#xbox"></use>
+                  </svg>
+                </a>
+
+                <a href="/">
+                  <svg class="epic" width="20" height="24">
+                    <use href="./images/Icon/sprite.svg#epic"></use>
+                  </svg>
+                </a>
+
+                <a href="/">
+                  <svg class="steamLogo" width="76" height="24">
+                    <use href="./images/Icon/sprite.svg#steamLogo"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container adventureContainer">
+        <h2 class="title adventureTitle">Daily Dose of Dopamine</h2>
+        <svg class="logoMobAdventure" width="114" height="160">
+          <use href="./images/Icon/sprite.svg#logoMobAdventure"></use>
+        </svg>
+
+        <p class="text adventureText">
+          DDoD — multiplayer top-down open world post-apocalyptic roguelike game
+          with a unique non-linear quest system where you will never experience
+          the same story. Explore a vast and immersive open world filled with
+          stunning landscapes, dangerous creatures, and hidden treasures waiting
+          to be discovered.
+        </p>
+      </div>
+    </section>
+
+    <section id="trailer">
+      <div class="aboutScreen">
+        <img src="./images/backgrounds/mapBcg.png" class="aboutImg" />
+        <div class="container aboutContainer">
+          <video class="aboutVideo" controls poster="./images/videoImg.jpeg">
+            <source src="/" type="video/mp4" />
+          </video>
+          <ul class="aboutList">
+            <li class="aboutItem">
+              <h3 class="subTitle">Story</h3>
+              <p class="text">
+                Unique complex set with Co2 absorbing Atmosphere Processor and
+                High-powered Propulsion Engine saved the world from the global
+                warming crysis.
+              </p>
+            </li>
+            <li class="aboutItem">
+              <h3 class="subTitle">Catastrophe</h3>
+              <p class="text">
+                The attempts to shut off the complex launched the series of
+                catastrophic events. The Mist monsters risen and demolished all
+                the military attempts to subdue the nightmare.
+              </p>
+            </li>
+            <li class="aboutItem">
+              <h3 class="subTitle">Mutants</h3>
+              <p class="text">
+                Mutants were the next stage of the rising nightmares. Irradiated
+                with the Mist, they occupied the research center. No one left
+                alive.
+              </p>
+            </li>
+            <li class="aboutItem">
+              <h3 class="subTitle">The Mist</h3>
+              <p class="text">
+                The Mist - is a genuine child of the broken science. The
+                Atmospheric Processor 's remarkable efficiency rendered the
+                intricacies of production inconsequential.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="subscribeScreen">
+        <img src="./images/backgrounds/subscribeBcg.png" class="subscribeImg" />
+        <div class="container subscribeContainer">
+          <div class="subscribeTitlesBox">
+            <h2 class="title">Game</h2>
+            <div class="subscribeBoxInBox">
+              <svg class="subscribeLogo" width="46" height="64">
+                <use href="./images/Icon/sprite.svg#mob-subscribe-logo"></use>
+              </svg>
+              <div class="subscribeBtnTitleBox">
+                <h2 class="title">Discover the Mist, Weapons and Mutants</h2>
+                <button class="twoColorBtn" id="modalBtnSubscribe">
+                  <svg class="twoColorBtnSvg" width="40" height="40">
+                    <use href="./images/Icon/sprite.svg#pinkBasketBtn"></use>
+                  </svg>
+                  <span class="twoColorBtnSpan"
+                    >SUBSCRIBE & GET FREE KEY NOW</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots">
+      <div class="screenshotContainer">
+        <h2 class="title screenshotTitle">screenshots</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/screenshot/screen-mask1.png"
+                alt="img-1"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/screenshot/screen-mask2.png"
+                alt="img-2"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/screenshot/screen-mask3.png"
+                alt="img-3"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/screenshot/screen-mask4.png"
+                alt="img-4"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/screenshot/screen-mask5.png"
+                alt="img-5"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/screenshot/screen-mask6.png"
+                alt="img-6"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/screenshot/screen-mask7.png"
+                alt="img-7"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/screenshot/screen-mask8.png"
+                alt="img-8"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="navSwipe">
+            <div class="swiper-scrollbar"></div>
+            <div class="btnBox">
+              <div class="swiper-button-prev">
+                <svg class="leftBtn" width="44" height="44">
+                  <use href="./images/Icon/sprite.svg#leftBtn"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="rightBtn" width="44" height="44">
+                  <use href="./images/Icon/sprite.svg#rightBtn"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="art-concepts">
+      <div class="screenshotContainer">
+        <h2 class="title screenshotTitle">art-concepts</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask1.png"
+                alt="img-1"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask2.png"
+                alt="img-2"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask3.png"
+                alt="img-3"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask4.png"
+                alt="img-4"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask5.png"
+                alt="img-5"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask6.png"
+                alt="img-6"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask7.png"
+                alt="img-7"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask8.png"
+                alt="img-8"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask9.png"
+                alt="img-9"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/concept/conc-mask10.png"
+                alt="img-10"
+                class="image-item"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="navSwipe">
+            <div class="swiper-scrollbar"></div>
+            <div class="btnBox">
+              <div class="swiper-button-prev">
+                <svg class="leftBtn" width="44" height="44">
+                  <use href="./images/Icon/sprite.svg#leftBtn"></use>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="rightBtn" width="44" height="44">
+                  <use href="./images/Icon/sprite.svg#rightBtn"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerScreen">
+        <div class="container footerContainer">
+          <div class="footerInfo">
+            <svg class="pegi18" width="49" height="58">
+              <use href="./images/Icon/sprite.svg#pegi18"></use>
+            </svg>
+            <p class="footerText">
+              All rights reserved. All other copyrights and trademarks are the
+              property of their respective owners.
+            </p>
+          </div>
+          <a href="/">
+            <svg class="footerLogoMob" width="55" height="80">
+              <use href="./images/Icon/sprite.svg#footerLogoMob"></use>
+            </svg>
+          </a>
+          <ul class="footerList">
+            <li class="footerItem">
+              <a href="/" class="footerLinks">Terms of Use</a>
+            </li>
+            <li class="footerItem">
+              <a href="/" class="footerLinks">Privacy Policy</a>
+            </li>
+            <li class="footerItem">
+              <a href="/" class="footerLinks">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="simpleModal">
+      <div class="modal-content">
+        <button class="closeBtn" id="closeBtn">
+          <svg class="closeBtnSvg" width="24" height="24">
+            <use href="./images/Icon/sprite.svg#closeModalBtn"></use>
+          </svg>
+        </button>
+        <h2 class="subTitle">
+          By entering your email you will be receiving your product code to
+          Steam
+        </h2>
+
+        <div>
+          <input
+            placeholder="ENTER YOUR E-MAIL"
+            class="inputModal"
+            id="inputModal"
+          />
+          <svg class="inputSvg" id="inputSvg" width="280" height="60">
+            <use href="./images/Icon/sprite.svg#inputSvg"></use>
+          </svg>
+          <p class="errorEmail" id="errorEmail">*email entered incorrectly</p>
+        </div>
+
+        <button class="sendBtnModal" id="sendBtnModal" disabled>
+          <svg class="sendBtnModalSvg" width="194" height="60">
+            <use href="./images/Icon/sprite.svg#pinkSendBtn"></use>
+          </svg>
+          <span class="textBtn">send</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="successModal" id="simplesuccessModal">
+      <div class="successModal-content">
+        <button class="closeBtn" id="successModalcloseBtn">
+          <svg class="closeBtnSvg" width="24" height="24">
+            <use href="./images/Icon/sprite.svg#closeModalBtn"></use>
+          </svg>
+        </button>
+        <svg class="succesSvg" width="121" height="95">
+          <use href="./images/Icon/sprite.svg#successIcon"></use>
+        </svg>
+        <h2 class="title succesTitle">Success</h2>
+        <button class="sendBtnModal" id="good">
+          <svg class="sendBtnModalSvg" width="194" height="60">
+            <use href="./images/Icon/sprite.svg#pinkSendBtn"></use>
+          </svg>
+          <span class="textBtn">good</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobileMenu" id="mobileMenu">
+      <div class="mobileMenu-content">
+        <button class="closeMenuBtn" id="closeMenu">
+          <svg class="closeMenuSvg" width="60" height="60">
+            <use href="./images/Icon/sprite.svg#menuClose"></use>
+          </svg>
+        </button>
+
+        <nav class="navigationMobile">
+          <svg class="logoHeader" width="35" height="50">
+            <use href="./images/Icon/sprite.svg#logoHeader"></use>
+          </svg>
+          <ul class="mobileList">
+            <li class="mobileItem">
+              <a href="#trailer" class="text mobileLink">trailer</a>
+            </li>
+            <li class="mobileItem">
+              <a href="#screenshots" class="text mobileLink">screenshots</a>
+            </li>
+            <li class="mobileItem">
+              <a href="#art-concepts" class="text mobileLink">art-concepts</a>
+            </li>
+            <li class="mobileItem">
+              <a
+                href="https://discord.com"
+                target="_blank"
+                class="text mobileLink"
+                >discord</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="twoColorBtn" id="mobileModalBtn">
+          <svg class="twoColorBtnSvg" width="40" height="40">
+            <use href="./images/Icon/sprite.svg#pinkSteamBtn"></use>
+          </svg>
+          <span class="twoColorBtnSpan">Play demo now</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/mobileMenu.js"></script>
+    <script src="./js/modalBtn.js"></script>
+  </body>
+</html>

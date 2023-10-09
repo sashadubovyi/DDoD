@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDoD</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container headerContainer">
+        <nav class="navigation">
+          <a href="/">
+            <svg class="logoHeader" width="35" height="50">
+              <use href="./images/Icon/sprite.svg#logoHeader"></use>
+            </svg>
+          </a>
+          <ul class="navList">
+            <li class="navItem">
+              <a href="/index.html#trailer" class="text navText">trailer</a>
+            </li>
+            <li class="navItem">
+              <a href="/index.html#screenshots" class="text navText"
+                >screenshots</a
+              >
+            </li>
+            <li class="navItem">
+              <a href="/index.html#art-concepts" class="text navText"
+                >art-concepts</a
+              >
+            </li>
+            <li class="navItem">
+              <a href="https://discord.com" target="_blank" class="text navText"
+                >discord</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="menuBtn" id="menuBtn">
+          <svg class="menuOpenBtn" width="60" height="60">
+            <use href="./images/Icon/sprite.svg#menuOpen"></use>
+          </svg>
+        </button>
+        <button class="twoColorBtn" id="modalBtn">
+          <svg class="twoColorBtnSvg" width="40" height="40">
+            <use href="./images/Icon/sprite.svg#pinkSteamBtn"></use>
+          </svg>
+          <span class="twoColorBtnSpan">Play demo now</span>
+        </button>
+      </div>
+    </header>
+
+    <section>
+      <div class="errorScreen">
+        <div class="container errorContainer">
+          <svg class="errorSvg" width="156" height="156">
+            <use href="./images/Icon/sprite.svg#errorSvg"></use>
+          </svg>
+          <div class="errorTextBox">
+            <h2 class="errorTitle">page not found or deleted</h2>
+            <p class="text">Try returning to the main page</p>
+          </div>
+          <a href="index.html">
+            <button class="sendBtnModal">
+              <svg class="sendBtnModalSvg" width="194" height="60">
+                <use href="./images/Icon/sprite.svg#pinkSendBtn"></use>
+              </svg>
+              <span class="textBtn">Main Page</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="simpleModal">
+      <div class="modal-content">
+        <button class="closeBtn" id="closeBtn">
+          <svg class="closeBtnSvg" width="24" height="24">
+            <use href="./images/Icon/sprite.svg#closeModalBtn"></use>
+          </svg>
+        </button>
+        <h2 class="subTitle">
+          By entering your email you will be receiving your product code to
+          Steam
+        </h2>
+
+        <div>
+          <input
+            placeholder="ENTER YOUR E-MAIL"
+            class="inputModal"
+            id="inputModal"
+          />
+          <svg class="inputSvg" id="inputSvg" width="280" height="60">
+            <use href="./images/Icon/sprite.svg#inputSvg"></use>
+          </svg>
+          <p class="errorEmail" id="errorEmail">*email entered incorrectly</p>
+        </div>
+
+        <button class="sendBtnModal" id="sendBtnModal" disabled>
+          <svg class="sendBtnModalSvg" width="194" height="60">
+            <use href="./images/Icon/sprite.svg#pinkSendBtn"></use>
+          </svg>
+          <span class="textBtn">send</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="successModal" id="simplesuccessModal">
+      <div class="successModal-content">
+        <button class="closeBtn" id="successModalcloseBtn">
+          <svg class="closeBtnSvg" width="24" height="24">
+            <use href="./images/Icon/sprite.svg#closeModalBtn"></use>
+          </svg>
+        </button>
+        <svg class="succesSvg" width="121" height="95">
+          <use href="./images/Icon/sprite.svg#successIcon"></use>
+        </svg>
+        <h2 class="title succesTitle">Success</h2>
+        <button class="sendBtnModal" id="good">
+          <svg class="sendBtnModalSvg" width="194" height="60">
+            <use href="./images/Icon/sprite.svg#pinkSendBtn"></use>
+          </svg>
+          <span class="textBtn">good</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobileMenu" id="mobileMenu">
+      <div class="mobileMenu-content">
+        <button class="closeMenuBtn" id="closeMenu">
+          <svg class="closeMenuSvg" width="60" height="60">
+            <use href="./images/Icon/sprite.svg#menuClose"></use>
+          </svg>
+        </button>
+
+        <nav class="navigationMobile">
+          <svg class="logoHeader" width="35" height="50">
+            <use href="./images/Icon/sprite.svg#logoHeader"></use>
+          </svg>
+          <ul class="mobileList">
+            <li class="mobileItem">
+              <a href="#trailer" class="text mobileLink">trailer</a>
+            </li>
+            <li class="mobileItem">
+              <a href="#screenshots" class="text mobileLink">screenshots</a>
+            </li>
+            <li class="mobileItem">
+              <a href="#art-concepts" class="text mobileLink">art-concepts</a>
+            </li>
+            <li class="mobileItem">
+              <a
+                href="https://discord.com"
+                target="_blank"
+                class="text mobileLink"
+                >discord</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="twoColorBtn" id="mobileModalBtn">
+          <svg class="twoColorBtnSvg" width="40" height="40">
+            <use href="./images/Icon/sprite.svg#pinkSteamBtn"></use>
+          </svg>
+          <span class="twoColorBtnSpan">Play demo now</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/mobileMenu.js"></script>
+    <script src="./js/modalBtn.js"></script>
+  </body>
+</html>
